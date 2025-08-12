@@ -7,10 +7,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
     <link rel="stylesheet" href="css/main.css">
-    <title>Welcome to my Portfolio</title>
+    <title>About Me</title>
 </head>
 
-<body id="bg-img">
+<body>
     <div class="overlay"></div>
     <header>
         <div class="menu-btn">
@@ -19,17 +19,17 @@
             <div class="btn-line"></div>
         </div>
 
-        <nav class="menu">
+        <nav class="about">
             <div class="menu-branding">
                 <div class="portrait"></div>
             </div>
             <ul class="menu-nav">
-                <li class="nav-item current">
+                <li class="nav-item">
                     <a href="/" class="nav-link">
                         Home
                     </a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item current">
                     <a href="about.html" class="nav-link">
                         About Me
                     </a>
@@ -47,25 +47,28 @@
             </ul>
         </nav>
     </header>
-    <main id="home">
+    <main id="about">
         <h1 class="lg-heading">
-            Asher Roni <span style="color:darkslategray">Verghese</span>
+            About <span style="color:darkslategray">Me</span>
         </h1>
-        <h2 class="sm-heading">
-            Student, Web Developer & Programmer
+        <h2 class="sm-heading" style="margin-bottom: 20px" ;>
+            Let me tell you a few things.....
         </h2>
-        <div class="icons">
-            <a href="#!">
-                <i class="fab fa-twitter  fa-2x"></i>
-            </a>
-            <a href="#!">
-                <i class="fab fa-linkedin  fa-2x"></i>
-            </a>
-            <a href="#!">
-                <i class="fab fa-github  fa-2x"></i>
-            </a>
-        </div>
+        <div class="about-info">
+            <img src="img/portrait.jpg" alt="Asher" class="bioimage">
+            <div class="bio">
+                <h3 class="text-secondary">Bio</h3>
+                <p>I’m Asher Roni Verghese, a third-year IT engineering student at Toc H Institute of Science and
+                    Technology. I work with Python and web development, and I’m learning DevOps to understand the full
+                    process from coding to deployment.
+                    I focus on building clean, practical solutions that solve real problems, while exploring how AI and
+                    new tools can enhance workflows. My goal is to combine technical skill with creative thinking to
+                    make a real impact in tech.</p>
+            </div>
     </main>
+    <footer id="main-footer">
+        Copyright &copy; 2025
+    </footer>
     <script src="js/main.js"></script>
 </body>
 
