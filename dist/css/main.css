@@ -71,7 +71,7 @@
 .menu-branding .portrait {
   width: 250px;
   height: 333px;
-  background: url("../img/portrait.jpg");
+  background: url("../img/portrait-3.jpg");
   border-radius: 50%;
   border: solid 3px #15B8A6;
 }
@@ -210,6 +210,62 @@ main#home h1 {
   border: #4FD1C5 3px solid;
 }
 
+.projects {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+}
+.projects img {
+  width: 100%;
+  border: 3px white solid;
+}
+.projects img:hover {
+  opacity: 0.5;
+  border-color: #4FD1C5;
+  transition: all 0.5s ease-out;
+}
+.projects .btn, .projects .btn-light, .projects .btn-dark {
+  display: block;
+  padding: 0.5rem 1rem;
+  border: 0;
+  margin-bottom: 0.5rem;
+}
+.projects .btn:hover, .projects .btn-light:hover, .projects .btn-dark:hover {
+  background-color: #4FD1C5;
+  color: #000;
+}
+.projects .btn-dark {
+  background-color: black;
+  color: #fff;
+}
+.projects .btn-light {
+  background-color: rgb(155.5974025974, 167.1558441558, 176.4025974026);
+  color: #333;
+}
+
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 1rem;
+}
+.boxes div {
+  font-size: 2rem;
+  border: 3px #fff solid;
+  padding: 1.5rem 2rem;
+  margin-bottom: 3rem;
+  transition: all 0.5s ease-out;
+}
+.boxes div:hover {
+  padding: 0.5rem 1.5rem;
+  background-color: #4FD1C5;
+  color: #000;
+}
+.boxes div:hover span {
+  color: #000;
+}
+
 .bio {
   grid-area: bio;
   background: rgb(45.2597402597, 51.9155844156, 57.2402597403);
@@ -225,6 +281,11 @@ main#home h1 {
   height: 60px;
 }
 
+@media screen and (min-width: 1171px) {
+  .projects {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
 @media screen and (max-width: 768px) {
   main {
     align-items: center;
@@ -254,18 +315,24 @@ main#home h1 {
     transform: translate3d(100%, 0, 0);
   }
   .menu-branding .portrait {
-    background: url(../img/portrait-2.jpg);
-    width: 150px;
-    height: 200px;
+    background: url(../img/portrait-3.jpg);
+    width: 250px;
+    height: 333px;
   }
   .about-info {
     grid-template-areas: "bioimage" "bio";
     grid-template-columns: 1fr;
   }
+  .projects {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 @media screen and (max-width: 500px) {
   main#home h1 {
     margin-top: 10vh;
+  }
+  .projects {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 

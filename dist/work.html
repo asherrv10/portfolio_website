@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
     <link rel="stylesheet" href="css/main.css">
-    <title>About Me</title>
+    <title>View my work</title>
 </head>
 
 <body>
@@ -24,12 +24,12 @@
                 <div class="portrait"></div>
             </div>
             <ul class="menu-nav">
-                <li class="nav-item">
-                    <a href="index.html" class="nav-link">
+                <li class="nav-item current">
+                    <a href="/" class="nav-link">
                         Home
                     </a>
                 </li>
-                <li class="nav-item current">
+                <li class="nav-item">
                     <a href="about.html" class="nav-link">
                         About Me
                     </a>
@@ -49,21 +49,33 @@
     </header>
     <main id="about">
         <h1 class="lg-heading">
-            About <span style="color:darkslategray">Me</span>
+            My <span style="color:darkslategray">work</span>
         </h1>
-        <h2 class="sm-heading" style="margin-bottom: 20px;">
-            Let me tell you a few things.....
+        <h2 class="sm-heading" style="margin-bottom: 20px;" ;>
+            Check out some of my projects....
         </h2>
-        <div class="about-info">
-            <img src="img/portrait.jpg" alt="Asher" class="bioimage">
-            <div class="bio">
-                <h3 class="text-secondary">Bio</h3>
-                <p>I’m Asher Roni Verghese, a third-year IT engineering student at Toc H Institute of Science and
-                    Technology. I work with Python and web development, and I’m learning DevOps to understand the full
-                    process from coding to deployment.
-                    I focus on building clean, practical solutions that solve real problems, while exploring how AI and
-                    new tools can enhance workflows. My goal is to combine technical skill with creative thinking to
-                    make a real impact in tech.</p>
+        <div class="projects">
+            <div class="item">
+                <a href="#!">
+                    <img src="img/projects/proj1.jpg" alt="Project">
+                </a>
+                <a href="#" class="btn-light">
+                    <i class="fas fa-eye"></i> Project
+                </a>
+                <a href="#" class="btn-dark">
+                    <i class="fab fa-github"></i> Github
+                </a>
+            </div>
+            <div class="item">
+                <a href="#!">
+                    <img src="img/projects/proj2.jpg" alt="Project">
+                </a>
+                <a href="#" class="btn-light">
+                    <i class="fas fa-eye"></i> Project
+                </a>
+                <a href="#" class="btn-dark">
+                    <i class="fab fa-github"></i> Github
+                </a>
             </div>
         </div>
     </main>
